@@ -2,43 +2,33 @@
 .nav{
     display: inline-block;
 }
-.imgDesc{
-    display: block;
-    .text{
-       p{
-           display: inline-block;
-       }
-    }
-    .port{
-        display: inline-block;
-    }
+.title{
+    text-align: center;
+    margin-top: 20px;
 }
-.gridBio {  display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0.2fr 1fr 1fr .2fr;
-    grid-auto-columns: 1fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
+.imgDesc{
+    width: 100%;
+    height: 90vh;
+    display: inline-block;
+    .inblo{
+        display: flex;
+        p{
+            margin:5vh 1vh;
+            float: none;
+        }
+        img{
+            max-width: 200px;
+            max-height: 200px;
+            margin: 5vh 1vh
+        
+        }
+    }
+
+}
+.gridBio, footerBio{  
     background: #7f7fd5;
     background: linear-gradient(to right, #91eae4, #86a8e7, #7f7fd5);
   }
-  
-  .footerBio { grid-area: 4 / 1 / 5 / 3; }
-  
-  .headerBio { grid-area: 1 / 1 / 2 / 3; }
-  
-  .mainBio { grid-area: 2 / 1 / 4 / 3; 
-    display: grid; 
-    grid-auto-columns: 1fr; 
-    grid-template-columns: 1fr 1fr; 
-    grid-template-rows: 1fr; 
-    gap: 0px 0px; 
-    grid-template-areas: 
-      "port text"; 
-  }
-  .port { grid-area: port; }
-  .text { grid-area: text; }
-  
-  .port { grid-area: 2 / 1 / 3 / 2; }
-  
-  .text { grid-area: 2 / 2 / 4 / 3; }
+.footerBio{
+    text-align: center;
+}
