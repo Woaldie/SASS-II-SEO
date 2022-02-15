@@ -1,0 +1,16 @@
+.gridProd, .footerProd {
+    font-family: "Quicksand", sans-serif;
+    display: grid;
+    background: #7f7fd5;
+    background: linear-gradient(to right, #91eae4, #86a8e7, #7f7fd5);
+  }
+.footerProd{
+    text-align: center;
+}
+.btn-primary:hover{
+  background-color: #7f7fd5;
+}
+
+.btn-primary{
+  background-color: #303094;
+}
